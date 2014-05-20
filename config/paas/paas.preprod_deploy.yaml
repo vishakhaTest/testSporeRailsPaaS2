@@ -1,0 +1,11 @@
+stack_name: testsporerailspaas2-preprod
+environment: preproduction
+paas_environment: production
+
+layers:
+  - dns:
+      - name: 'testsporerailspaas2.preprod.paas.aws.vodafone.com.au'
+    instances:
+      ami_name: <%=ami_name%>
+      env:
+        LOG_FILENAME: testsporerailspaas2-preprod
